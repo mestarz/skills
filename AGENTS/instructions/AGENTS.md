@@ -52,11 +52,11 @@
 ---
 ## 任务进度记录
 
-每完成一个小任务，必须在 `/tmp/web-tools/` 目录中记录进度。
+每完成一个小任务，必须在 `/tmp/${project_name}/` 目录中记录进度。
 
 ### 目录结构
 ```
-/tmp/web-tools/
+/tmp/${project_name}/
 ├── progress.md        # 主进度日志（追加写入）
 └── tasks/
     └── <task-id>.md   # 单个任务的详细记录（可选）
@@ -75,9 +75,9 @@
 
 ### 初始化记录目录
 
-若 `/tmp/web-tools/` 不存在，在首次记录前执行：
+若 `/tmp/${project_name}/` 不存在，在首次记录前执行：
 ```bash
-mkdir -p /tmp/web-tools/tasks
+mkdir -p /tmp/${project_name}/tasks
 ```
 ---
 ## 子 Agent 完成后的 Code Review
